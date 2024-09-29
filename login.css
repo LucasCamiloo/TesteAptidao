@@ -1,0 +1,125 @@
+/* Estilos gerais */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+}
+
+/* Posiciona a logo no canto superior direito */
+.logo {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.logo img {
+    max-width: 120px;
+}
+
+/* Estilos da área de conteúdo principal */
+.container {
+    text-align: left;
+    padding: 20px;
+    max-width: 400px; /* Ajuste para caber o formulário */
+    width: 100%;
+    margin: 100px 20px 0 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: normal;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+/* Estilos do botão reutilizado */
+button {
+    display: inline-block;
+    background-color: white;
+    color: #007bff;
+    border: 2px solid #007bff;
+    padding: 10px 30px;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Estilos específicos para o formulário de login */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+input {
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+p a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    p, label, input {
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 8px 20px;
+    }
+
+    .logo img {
+        max-width: 100px;
+    }
+}

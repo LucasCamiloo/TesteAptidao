@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+}
+
+/* Posiciona a logo no canto superior direito */
+.logo {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.logo img {
+    max-width: 120px;
+}
+
+.container {
+    text-align: left;
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+    margin: 100px 20px 0 20px; /* Ajuste a margem superior para posicionar o texto */
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: normal;
+    color: #000;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.highlight {
+    font-weight: bold;
+    color: #000;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+button {
+    display: inline-block;
+    background-color: white;
+    color: #007bff;
+    border: 2px solid #007bff;
+    padding: 10px 30px;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 8px 20px;
+    }
+
+    .logo img {
+        max-width: 100px;
+    }
+}
+
